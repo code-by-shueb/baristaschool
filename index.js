@@ -29,7 +29,16 @@ buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const message = "Hi, I would like to know more about the school";
     const url = `https://wa.me/254758957734?text=${encodeURIComponent(message)}`;
-    
+
     window.open(url, "_blank");
   });
-})
+});
+AOS.init({
+  duration: 1000,
+  offset: 120,
+  delay: 0,
+  easing: "ease",
+  once: false,
+  anchorPlacement: 'top-bottom',
+  mirror: false
+});
